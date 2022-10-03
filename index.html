@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3cb27de1e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <h1>Personal Library</h1>
+   <div id="newBtn-container">
+    <button id="newBtn">+ Add Book</button>
+   </div>
+   <div id="info" style="display:none;">
+    <form id="form" action="/script.js">
+        <span class="close">x</span>
+        <legend>New Book</legend>
+        <div id="txtInput">
+            <p>
+                <input type="text" id="title" name="title" placeholder="Title">
+            </p>
+            <p>
+                <input type="text" id="author" name="author" placeholder="Author">
+            </p>
+            <p>
+                <input type="text" id="pages" name="pages" placeholder="Pages">
+            </p>
+        </div>
+        <div id="checkBox">
+            <p>
+                <label>Read: </label>
+                <input type="checkbox" id="read" name="read" value="yes">
+            </p>
+        </div>
+        <button type="submit" form="form" id="addBtn">Add</button>
+    </form>  
+    </div>
+    <div id="Library-container"></div>
+    <footer class="footer">
+        <p>
+            Copyright © 2022 t-rupe
+        </p>
+        <a href="https://github.com/t-rupe" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
